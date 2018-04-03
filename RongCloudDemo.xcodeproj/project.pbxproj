@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7BFDF96DF4B6698131AC22C /* Pods_RongCloudDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598A40C7969C0E31BACFC7A8 /* Pods_RongCloudDemo.framework */; };
 		AE722005207368A600666BDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE722004207368A600666BDF /* AppDelegate.m */; };
 		AE722008207368A600666BDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE722007207368A600666BDF /* ViewController.m */; };
 		AE72200B207368A600666BDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE722009207368A600666BDF /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		598A40C7969C0E31BACFC7A8 /* Pods_RongCloudDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RongCloudDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C39DC00CD753AD4306BA84 /* Pods-RongCloudDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AE722000207368A600666BDF /* RongCloudDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RongCloudDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE722003207368A600666BDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE722004207368A600666BDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		AE722018207368A600666BDF /* RongCloudDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RongCloudDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE72201C207368A600666BDF /* RongCloudDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RongCloudDemoUITests.m; sourceTree = "<group>"; };
 		AE72201E207368A600666BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D74F768ACE818F20BD1A3B93 /* Pods-RongCloudDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7BFDF96DF4B6698131AC22C /* Pods_RongCloudDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		405C3A143ED873EA8BA4BA28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8C39DC00CD753AD4306BA84 /* Pods-RongCloudDemo.debug.xcconfig */,
+				D74F768ACE818F20BD1A3B93 /* Pods-RongCloudDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AE721FF7207368A600666BDF = {
 			isa = PBXGroup;
 			children = (
 				AE722002207368A600666BDF /* RongCloudDemo */,
 				AE72201B207368A600666BDF /* RongCloudDemoUITests */,
 				AE722001207368A600666BDF /* Products */,
+				405C3A143ED873EA8BA4BA28 /* Pods */,
+				D786184976083AA1FC5A796D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +119,14 @@
 			path = RongCloudDemoUITests;
 			sourceTree = "<group>";
 		};
+		D786184976083AA1FC5A796D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				598A40C7969C0E31BACFC7A8 /* Pods_RongCloudDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE722021207368A600666BDF /* Build configuration list for PBXNativeTarget "RongCloudDemo" */;
 			buildPhases = (
+				7D3D84AF2B29DA25591FB15D /* [CP] Check Pods Manifest.lock */,
 				AE721FFC207368A600666BDF /* Sources */,
 				AE721FFD207368A600666BDF /* Frameworks */,
 				AE721FFE207368A600666BDF /* Resources */,
+				7E72272978EDEF11D95FD7F5 /* [CP] Embed Pods Frameworks */,
+				6D458E3492560EC3EBF514B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +226,71 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D458E3492560EC3EBF514B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-resources.sh",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RongCloud.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Emoji.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCConfig.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D3D84AF2B29DA25591FB15D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RongCloudDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E72272978EDEF11D95FD7F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RongCloudDemo/Pods-RongCloudDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE721FFC207368A600666BDF /* Sources */ = {
@@ -355,6 +447,7 @@
 		};
 		AE722022207368A600666BDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8C39DC00CD753AD4306BA84 /* Pods-RongCloudDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -368,6 +461,7 @@
 		};
 		AE722023207368A600666BDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74F768ACE818F20BD1A3B93 /* Pods-RongCloudDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
